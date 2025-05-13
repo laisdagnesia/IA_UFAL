@@ -23,15 +23,17 @@ def comparar_sintomas(sintomas_paciente, base):
     return melhores_casos, maior_similaridade
 
 # Sintomas relatados pelo paciente (exemplo)
-sintomas_paciente = {"febre", "dor muscular", "náusea"}
+#sintomas_paciente = {"dor abdominal", "diarreia", "náusea"}
+sintomas_paciente = {"febre"}
 
 # Faz a busca
 casos_similares, grau = comparar_sintomas(sintomas_paciente, base_de_casos)
 
 # Mostra o resultado
 if casos_similares:
-    print(f"\n🧠 Casos mais similares encontrados (com {grau} sintomas em comum):\n")
+    print(f"\nCasos mais similares encontrados com {grau} sintomas em comum:\n")
     for i, caso in enumerate(casos_similares, 1):
-        print(f"{i}. Diagnóstico sugerido: {caso['diagnostico']} | Sintomas: {caso['sintomas']}")
+        #print(f"{i}. Diagnóstico sugerido: {caso['diagnostico']} com os sintomas: {caso['sintomas']}")
+        print(f"{i}. Diagnóstico sugerido: {caso['diagnostico']}")
 else:
-    print("\n⚠️ Nenhum caso similar encontrado.")
+    print("\nNenhum caso similar encontrado.")
