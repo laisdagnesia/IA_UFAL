@@ -2,7 +2,7 @@
 base_de_casos = [
     {"sintomas": {"febre", "tosse", "dor de garganta"}, "diagnostico": "Gripe"},
     {"sintomas": {"dor de cabeça", "sensibilidade à luz", "náusea"}, "diagnostico": "Enxaqueca"},
-    {"sintomas": {"dor abdominal", "náusea", "diarreia"}, "diagnostico": "Gastroenterite"},
+    {"sintomas": {"dor abadominal", "náusea", "diarreia"}, "diagnostico": "Gastroenterite"},
     {"sintomas": {"febre", "dor muscular", "cansaço"}, "diagnostico": "Dengue"},
     {"sintomas": {"tosse", "falta de ar", "dor no peito"}, "diagnostico": "Bronquite"}
 ]
