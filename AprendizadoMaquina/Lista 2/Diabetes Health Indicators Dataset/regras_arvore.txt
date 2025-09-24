@@ -1,0 +1,22 @@
+|--- glicose <= 114.50
+|   |--- pedigree <= 0.66
+|   |   |--- bmi <= 30.60
+|   |   |   |--- weights: [105.00, 2.00] class: 0
+|   |   |--- bmi >  30.60
+|   |   |   |--- weights: [81.00, 17.00] class: 0
+|   |--- pedigree >  0.66
+|   |   |--- idade <= 40.00
+|   |   |   |--- weights: [22.00, 8.00] class: 0
+|   |   |--- idade >  40.00
+|   |   |   |--- weights: [2.00, 9.00] class: 1
+|--- glicose >  114.50
+|   |--- bmi <= 28.15
+|   |   |--- idade <= 27.50
+|   |   |   |--- weights: [24.00, 0.00] class: 0
+|   |   |--- idade >  27.50
+|   |   |   |--- weights: [23.00, 12.00] class: 0
+|   |--- bmi >  28.15
+|   |   |--- glicose <= 154.50
+|   |   |   |--- weights: [72.00, 77.00] class: 1
+|   |   |--- glicose >  154.50
+|   |   |   |--- weights: [13.00, 69.00] class: 1
